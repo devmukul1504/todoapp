@@ -1,0 +1,193 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+
+
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #a89952;
+}
+
+.contentArea {
+    width: 50%;
+    height: 50%;
+    background-color: #f3eabb;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.addItems {
+    width: 50vw;
+    height: 20%;
+    margin: 20px 0 10px 0;
+    /* background-color: red; */
+}
+
+.addItems input {
+    width: 30vw;
+    height: 45px;
+    /* margin: 0 10px; */
+    /* padding: 10px; */
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    outline: none;
+    border: none;
+    /* background-color: #F4A259; */
+}
+
+.addItems button {
+    width: 10vw;
+    height: 45px;
+    /* padding: 10px; */
+    border-radius: 30px;
+    font-size: 1rem;
+    border: 1px solid white;
+    color: white;
+    background-color: #F4A259;
+    cursor: pointer;
+}
+
+#todoForm {
+
+    margin: auto;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: white;
+    border-radius: 30px;
+}
+
+.toDoList {
+
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    margin-bottom: 15px;
+    height: 80%;
+    overflow-y: auto;
+    padding: 10px;
+    /* background-color: green; */
+
+}
+
+li {
+
+    list-style: none;
+    margin: 5px 10px;
+    width: 98%;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+}
+
+li p,
+li input {
+    margin: 5px;
+}
+
+li p {
+    width: 92%;
+    font-size: 1.4rem;
+}
+
+li input[type=checkbox] {
+    accent-color: #f4a259;
+}
+
+li input[type=checkbox]:checked+p {
+    text-decoration: line-through;
+    color: rgb(170, 167, 167);
+    /* display: none; */
+}
+
+
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #F4A259;
+    border-radius: 30px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #a89952;
+    border-radius: 30px;
+}
+
+
+@media (max-width:670px) {
+
+
+    .contentArea {
+        width: 90%;
+        height: 90%;
+        background-color: #f3eabb;
+        border-radius: 30px;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .addItems {
+        width: 100%;
+        height: 20%;
+        margin: 10px 0 5px 0;
+        /* background-color: red; */
+    }
+
+    .addItems input {
+        width: 100%;
+        height: 45px;
+        /* margin: 0 10px; */
+        /* padding: 10px; */
+        border-radius: 30px;
+
+        outline: none;
+        border: none;
+        /* background-color: #F4A259; */
+    }
+
+    .addItems button {
+        width: 50%;
+        /* height: 45px; */
+        /* padding: 10px; */
+
+        font-size: 1rem;
+        margin: 5px auto;
+
+    }
+
+    #todoForm {
+
+        margin: auto;
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        background-color: transparent;
+        border-radius: 30px;
+    }
+}
